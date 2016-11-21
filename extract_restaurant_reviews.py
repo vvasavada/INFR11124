@@ -117,8 +117,9 @@ for business_id in data:
 #print frequency_votes
 
 #frequency_votes = {}
-#for pair in frequency_list.most_common():
-#	with open("frequency_list", 'a') as f:
-#		f.write(pair[0] + "," + str(pair[1]) + "\n")
+frequency_list = Counter(effective_keywords)
+for pair in frequency_list.most_common():
+	with open("frequency_list", 'a') as f:
+		f.write(pair[0] + "," + str(pair[1]) + "\n")
 #		frequency_votes[pair[1]] = keyword_votes[pair[0]]
 #print sorted(frequency_list, key=frequency_list.get)
