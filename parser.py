@@ -34,8 +34,15 @@ def getUsers():
 	for i in range(0, data_df.shape[0]):
 		datai = data_df.iloc[i]
 		u = User()
+		u.setVoteCount(sum(map(int, datai['votes'].values())))
+		u.setEliteNum(len(datai["elite"]))
+		for friend in datai["friends"]:
+			u.addFriend(friend)
 		u.setID(datai["user_id"])
+		u.setFanCount(datai["fans"])
+		u.setFriendCount(len(datai["friends"]))
 		u.setReviewCount(datai["review_count"])
+		u.setYelpingSince(datai["yelping_since"])
 		ret.append(u)
 	
 	return ret
