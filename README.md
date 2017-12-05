@@ -10,4 +10,4 @@ Before execution of extract_restaurant_reviews.py or running the commands in "Se
 
 iPythonExamples.pdf contains all the commands used to generate many plots (few of which were used in report) in our experimental studies.
 
-For any concerns regarding code or report, please email me at s1672896@sms.ed.ac.uk
+For any concerns regarding code or report, please email me at v.vasavada@hotmail.com
